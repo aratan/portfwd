@@ -27,4 +27,7 @@ go build -o portfwd portfwd.go
 uso:
 ```bash
 ./portfwd -lport 8000 -rhost 127.0.0.1 -rport 80
+
+>> gobuster dir -u http://10.0.2.14:8001 -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -x php,html,txt,sql,db,xml,old,bak,zip,tar -r -t 10
+
 ```
